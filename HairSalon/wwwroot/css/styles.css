@@ -46,6 +46,7 @@ div.content {
   min-height: calc(2*var(--div-height));
   background: #550081;
   margin: 1em;
+  padding: 1em;
 }
 
 form {
@@ -59,11 +60,7 @@ form > * {
   margin: .5em 0;
 }
 
-:link {
+:link,:visited {
   text-decoration: none;
   color: #FEAFA2;
-}
-
-:visited, :focus {
-  color: #5FFFFF;
 }

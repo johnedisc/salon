@@ -17,6 +17,9 @@
     @Html.LabelFor(model => model.Last)
     @Html.EditorFor(model => model.Last)
 
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId")
+
     <input type="submit" value="Save" />
 }
 <p>@Html.ActionLink("delete client", "Delete", new { id = Model.ClientId })</p>

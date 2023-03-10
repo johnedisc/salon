@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using PROJECTNAME.Models;
+using HairSalon.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PROJECTNAME.Controllers
+namespace HairSalon.Controllers
 {
-  public class PARENTTABLEController : Controller
+  public class StylistsController : Controller
   {
   }
 }

@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Client
+
+<h2>delete forever?</h2>
+
+@Html.DisplayNameFor(model => model.First): @Html.DisplayFor(model => model.First)
+@Html.DisplayNameFor(model => model.Last): @Html.DisplayFor(model => model.Last)
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete" />
+}
+@Html.ActionLink("back to List", "Index")

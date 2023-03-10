@@ -1,6 +1,6 @@
 :root {
   --foot-height: 30vh;
-  --div-height: 20vh;
+  --div-height: 10vh;
 }
 
 p {
@@ -8,6 +8,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  size: 1.2em;
 }
 
 #footer {
@@ -42,6 +44,8 @@ div.content {
   align-items: center;
   min-width: calc(2*var(--div-height));
   min-height: calc(2*var(--div-height));
+  background: #550081;
+  margin: 1em;
 }
 
 form {
@@ -58,3 +62,8 @@ form > * {
 :link {
   text-decoration: none;
   color: #FEAFA2;
+}
+
+:visited, :focus {
+  color: #5FFFFF;
+}

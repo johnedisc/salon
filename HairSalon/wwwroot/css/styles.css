@@ -1,11 +1,27 @@
-div#footer {
+:root {
+  --foot-height: 30vh;
+  --div-height: 20vh;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 	position:fixed;
 	bottom:0px;
 	left:0px;
 	width:100%;
 	color:#CCC;
 	background:#333;
-	padding:8px;
+  max-height: var(--foot-height);
 }
 
 
@@ -19,13 +35,13 @@ body {
   color: white;
 }
 
-div {
+div.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 20vw;
-  min-height: 20vw;
+  min-width: calc(2*var(--div-height));
+  min-height: calc(2*var(--div-height));
 }
 
 form {
@@ -37,15 +53,6 @@ form {
 
 form > * {
   margin: .5em 0;
-}
-
-.items {
-  background: grey;
-  color: black;
-  border: 2px solid grey;
-  border-radius: 2px;
-  padding: 2em;
-  margin: 2em;
 }
 
 :link {

@@ -1,0 +1,11 @@
+@{
+    Layout = "_Layout";
+}
+@using System;
+<div>
+  <h2>welcome.</h2>
+  <h2>the time exact time is</h2>
+  <h1>@DateTime.Now.TimeOfDay</h1>
+  <h4 class="link">@Html.ActionLink("view all clients","Index","Clients")</h4>
+  <h4 class="link">@Html.ActionLink("view all stylists","Index","Stylists")</h4>
+</div>

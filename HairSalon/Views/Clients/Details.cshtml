@@ -9,7 +9,8 @@
 <div class="content">
   <h3>@Html.DisplayNameFor(model => model.First): @Html.DisplayFor(model => model.First)<h3>
       <h3>@Html.DisplayNameFor(model => model.Last): @Html.DisplayFor(model => model.Last)<h3>
-      <h3>@Html.DisplayNameFor(model => model.Stylist): @Html.DisplayFor(model => model.Stylist.First)<h3>
+          <h3>@Html.DisplayNameFor(model => model.Stylist): @Html.DisplayFor(model => model.Stylist.First)</h3>
 </div>
+<p>@Html.ActionLink("go to stylist info", "Details", "Stylists", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("edit client", "Edit", new { id = Model.ClientId })</p>
 <p>@Html.ActionLink("back to client list", "Index")</p>

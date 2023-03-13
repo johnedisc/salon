@@ -21,7 +21,6 @@ namespace HairSalon.Controllers
       List<Client> model = _db.Clients
         .Include(client => client.Stylist)
         .ToList();
-      ViewBag.PageTitle = "view all clients";
       return View(model);
     }
 
